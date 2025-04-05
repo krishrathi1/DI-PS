@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Aggregation Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="details.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Disaster Aggregation Software</h1>
+    </header>
+    <main>
+        <section>
+            <div class="place-container">
+                <div id="placeName"></div>
+            </div>
+        </section>
+        <section class = "maps">
+            <h2>Selected Location on Map</h2>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+        <section>
+            <h2>Weather Data (3 Days)</h2>
+            <div id="weatherData"></div>
+        </section>
+        <section>
+            <h2>Disaster Risk Prediction (3 Days)</h2>
+            <div id="riskData"></div>
+            <h2>Disaster Risk Graph (3 Days)</h2>
+            <canvas id="riskChart"></canvas>
+        </section>
+        <section>
+            <h2>Earthquake Data</h2>
+            <div id="earthquakeData"></div>
+        </section>
+        <section>
+            <h2>Elevation Data</h2>
+            <div id="elevationData"></div>
+        </section>
+    </main>
+</body>
+</html>
